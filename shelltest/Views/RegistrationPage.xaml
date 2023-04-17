@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              Shell.FlyoutBehavior="Disabled"
+             x:Class="shelltest.Views.RegistrationPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Entry Placeholder="First Name" Grid.Column="0"/>
+                <Entry Placeholder="Last Name" Grid.Column="1"/>
+            </Grid>
+            <Entry Placeholder="Mobile Number" Keyboard="Telephone"/>
+            <Entry Placeholder="Civil ID" Keyboard="Numeric"/>
+            <Entry Placeholder="Email Address" Keyboard="Email"/>
+            <Entry x:Name="passw" Placeholder="Password" IsPassword="True" />
+            <Entry x:Name="repassw" Placeholder="Re Password" IsPassword="True"/>
+            <Button Text="Register" FontSize="25" TextColor="#FFc1ab79"
+                    Clicked="Button_Clicked" BackgroundColor="#FF243644"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

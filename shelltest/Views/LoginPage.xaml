@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             Shell.FlyoutBehavior="Disabled"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             
+             x:Class="shelltest.Views.LoginPage"
+            >
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand">
+            <Entry Placeholder="Civil ID" Keyboard="Numeric"/>
+            <Entry x:Name="passw" Placeholder="Password" IsPassword="True" />
+            <Button Text="Login" FontSize="25" BackgroundColor="#FF243644" 
+                    TextColor="#FFc1ab79" Clicked="Button_Clicked_1"/>
+            <Label Text="----------------------------------" HorizontalOptions="Center"/>
+            <Label Text="or" HorizontalOptions="Center"/>
+            <Label Text="----------------------------------" HorizontalOptions="Center"/>
+            <Label Text="Register" FontSize="30" HorizontalOptions="Center">
+                
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

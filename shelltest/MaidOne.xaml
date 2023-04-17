@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="shelltest.MaidOne">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowDefinitions="10,100,100">
+
+                <Button Text="Name: Leena M Jhon      Age:42       Has experience" FontSize="30" 
+                        Grid.Row="1" TextColor="White"  BackgroundColor="#FF243644" BorderColor="white"
+                        Clicked="Button_Clicked"/>
+            </Grid>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

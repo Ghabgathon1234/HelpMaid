@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Home"
+             BackgroundColor="White"
+             x:Class="shelltest.Views.HomeP">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Login" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Image Source="LogoM.png" HorizontalOptions="Start"/>
+            <Label Text="  "/>
+            <Label Text="  Permanent Employment:" FontSize="Large"
+                   FontAttributes="Bold" TextColor="#FF243644"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton Source="MaidM.jpg" Grid.Row="1" Grid.Column="1"
+                             HeightRequest="141"
+                             WidthRequest="90"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             CornerRadius="10"
+                             x:Name="MaidB"
+                             Clicked="MaidB_Clicked"
+                             >
+
+                </ImageButton>
+                <ImageButton Source="DriverM.jpg" Grid.Row="1" Grid.Column="2"
+                             HeightRequest="140"
+                             WidthRequest="90"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             CornerRadius="10"
+                             Clicked="ImageButton_Clicked"
+                             
+                             >
+
+                </ImageButton>
+                
+                <ImageButton Source="ChefM.jpg" Grid.Row="1" Grid.Column="3"
+                             HeightRequest="140"
+                             WidthRequest="90"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             CornerRadius="10"
+                             Clicked="ImageButton_Clicked_1"
+                             
+                             >
+
+                </ImageButton>
+                <Label Grid.Row="2" Grid.Column="1" Text="House Maid" TextColor="#FF243644"
+                       HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="2" Text="Driver" TextColor="#FF243644"
+                       HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="3" Text="Chef" TextColor="#FF243644"
+                       HorizontalOptions="Center"/>
+
+            </Grid>
+            <Label Text="  Temporary Employment:" FontSize="Large"
+                   FontAttributes="Bold"  TextColor="#FF243644"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="140"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton Source="MaidM.jpg" Grid.Row="1" Grid.Column="1"
+                             HeightRequest="141"
+                             WidthRequest="90"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             CornerRadius="10"
+                             x:Name="MaidF"
+                             Clicked="MaidF_Clicked"
+                             >
+
+                </ImageButton>
+                <ImageButton Source="DriverM.jpg" Grid.Row="1" Grid.Column="2"
+                             HeightRequest="140"
+                             WidthRequest="90"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             CornerRadius="10"
+                             Clicked="ImageButton_Clickedd"
+                             
+                             >
+
+                </ImageButton>
+                <ImageButton Source="ChefM.jpg" Grid.Row="1" Grid.Column="3"
+                             HeightRequest="140"
+                             WidthRequest="90"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             CornerRadius="10"
+                             Clicked="ImageButton_Clickeddd"
+                             
+                             >
+
+                </ImageButton>
+                <Label Grid.Row="2" Grid.Column="1" Text="House Maid" TextColor="#FF243644"
+                       HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="2" Text="Driver" TextColor="#FF243644"
+                       HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="3" Text="Chef" TextColor="#FF243644"
+                       HorizontalOptions="Center"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
